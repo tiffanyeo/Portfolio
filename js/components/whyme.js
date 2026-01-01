@@ -18,9 +18,10 @@ export function renderWhyMe() {
     const section = document.querySelector("#whyme");
     if (!section) return;
 
+    /* TODO: Tweak title */
     section.innerHTML = `
         <div class="whyme__content">
-            <h2 class="whyme__title">Not your average CS‑“student”?</h2>
+            <h2 class="whyme__title">Not your average CS‑“student”?????</h2>
 
             <p class="whyme__text">
                 I’m not a traditional CS student. My double background in computer science and media technology gives me both the engineering foundation and the human‑tech understanding needed to build products that actually work in the real world.
