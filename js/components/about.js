@@ -4,23 +4,38 @@
  * Renders the About section content.
  *
  * Responsibilities:
- * - Later: inject About HTML into <section id="about">
- * - Later: handle any About-specific interactions or animations
+ * - Inject HTML into <section id="about">
+ * - Later: handle animations or interactive elements
  *
- * This file will be imported and called from main.js
- * via renderAbout().
+ * Imported and called from main.js via renderAbout().
  */
 
 /**
  * renderAbout()
  * -----------------------------------------
  * Inserts the About section markup.
- * Currently empty — will be implemented once
- * the HTML structure and text content are approved.
  */
 export function renderAbout() {
-    // TODO: Insert About HTML into #about
-    // Example (later):
-    // const section = document.querySelector("#about");
-    // section.innerHTML = `...`;
+    const section = document.querySelector("#about");
+    if (!section) return;
+
+    section.innerHTML = `
+        <div class="about__content">
+            <h2 class="about__title">About Me</h2>
+
+            <p class="about__text">
+                I'm a developer who loves building clean, scalable, and thoughtful digital products.
+                I combine technical depth with strong communication and a structured workflow.
+            </p>
+
+            <p class="about__text">
+                My background spans computer science, media technology, and hands-on product development.
+                I enjoy solving real problems, improving systems, and creating meaningful user experiences.
+            </p>
+        </div>
+
+        <div class="about__visual">
+            <!-- Placeholder for future image or illustration -->
+        </div>
+    `;
 }
