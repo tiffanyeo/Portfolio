@@ -37,23 +37,35 @@ initFooter();
 import { initNavbar } from './navbar.js';
 
 // Sections
-import { renderHero } from "./components/hero.js"; 
-import { renderAbout } from "./components/about.js"; 
-import { renderFunlines } from "./components/funlines.js"; 
-import { renderWhyMe } from "./components/whyme.js"; 
-import { renderHowIWork } from "./components/howiwork.js"; 
-import { renderSkills } from "./components/skills.js"; 
-import { renderSelectedWork } from "./components/selectedwork.js"; 
-import { renderProjects } from "./components/projects.js"; 
-import { renderEducation } from "./components/education.js"; 
+import { renderHero } from "./components/hero.js";
+import { renderAbout } from "./components/about.js";
+import { renderFunlines } from "./components/funlines.js";
+import { renderWhyMe } from "./components/whyme.js";
+import { renderHowIWork } from "./components/howiwork.js";
+import { renderSkills } from "./components/skills.js";
+import { renderSelectedWork } from "./components/selectedwork.js";
+import { renderProjects } from "./components/projects.js";
+import { renderEducation } from "./components/education.js";
 import { renderContact } from "./components/contact.js";
 
+/** 
+ * initApp()
+ * -----------------------------------------
+ * Runs all initialization logic.
+ */
 function initApp() {
 
-
-
-
-
+    initNavbar(); 
+    renderHero(); 
+    renderAbout(); 
+    renderFunlines(); 
+    renderWhyMe(); 
+    renderHowIWork(); 
+    renderSkills(); 
+    renderSelectedWork(); 
+    renderProjects(); 
+    renderEducation(); 
+    renderContact();
 
 }
 
