@@ -19,6 +19,7 @@
  * the HTML structure and text content are approved.
  */
 export function renderEducation() {
+    
     const section = document.querySelector("#education");
     if (!section) return;
 

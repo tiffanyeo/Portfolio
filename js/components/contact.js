@@ -19,8 +19,22 @@
  * the HTML structure and text content are approved.
  */
 export function renderContact() {
-    // TODO: Insert Contact HTML into #contact
-    // Example (later):
-    // const section = document.querySelector("#contact");
-    // section.innerHTML = `...`;
+    const section = document.querySelector("#contact");
+    if (!section) return;
+
+    section.innerHTML = `
+        <div class="contact__content">
+            <h2 class="contact__title">Work With Me</h2>
+
+            <p class="contact__text">
+                I’m currently open for part‑time SWE roles, internships and junior developer opportunities.
+            </p>
+
+            <div class="contact__links">
+                <a href="mailto:tiffanylarsson.dev@gmail.com" class="contact__link">Mail</a>
+                <a href="https://github.com/tiffnaystud" target="_blank" class="contact__link">GitHub</a>
+                <a href="https://www.linkedin.com/in/tiffany-e-larsson" target="_blank" class="contact__link">LinkedIn</a>
+            </div>
+        </div>
+    `;
 }
