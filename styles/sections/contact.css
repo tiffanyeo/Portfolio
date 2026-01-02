@@ -13,3 +13,17 @@
  */
 
 /* TODO: Add Contact styles once HTML structure is defined */
+.contact__links {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.contact__link {
+    font-weight: 500;
+    color: var(--color-accent);
+}
+
+.contact__link:hover {
+    color: var(--color-accent-light);
+}

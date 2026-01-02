@@ -13,3 +13,31 @@
  */
 
 /* TODO: Add Projects styles once HTML structure is defined */
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.project__card {
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg-alt);
+}
+
+.project__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.project__tag {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+}

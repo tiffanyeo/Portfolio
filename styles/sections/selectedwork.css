@@ -14,3 +14,6 @@
  */
 
 /* TODO: Add Selected Work styles once HTML structure is defined */
+.selectedwork__item {
+    margin-bottom: var(--space-xl);
+}

@@ -13,3 +13,6 @@
  */
 
 /* TODO: Add Education styles once HTML structure is defined */
+.education__item {
+    margin-bottom: var(--space-lg);
+}
