@@ -14,3 +14,12 @@
  */
 
 /* TODO: Add Fun Lines styles once HTML structure is defined */
+
+.funlines__list {
+    margin-top: var(--space-md);
+}
+
+.funlines__item {
+    font-style: italic;
+    color: var(--color-text-light);
+}

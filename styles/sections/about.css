@@ -14,3 +14,9 @@
  */
 
 /* TODO: Add About styles once HTML structure is defined */
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
