@@ -43,4 +43,47 @@
     /* Max width for content */
     --max-width: 900px;
 
+    /* ---------- Reset ---------- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ---------- Base ---------- */
+    html,
+    body {
+        background: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-main);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    svg {
+        max-width: 100%;
+        display: block;
+    }
+
+    a {
+        color: var(--color-accent);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--color-accent-light);
+    }
+
+    /* ---------- Section Layout ---------- */
+    section {
+        padding: var(--space-xxl) var(--space-md);
+        display: flex;
+        justify-content: center;
+    }
+
+    section>div {
+        width: 100%;
+        max-width: var(--max-width);
+    }
 }
