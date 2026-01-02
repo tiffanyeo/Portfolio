@@ -10,3 +10,37 @@
 */
 
 /* TODO: Add common styling */
+
+/* ---------- Color System ---------- */
+:root {
+    /* Background */
+    --color-bg: #f3f1ed;
+    --color-bg-alt: #e9e7e3;
+
+    /* Text */
+    --color-text: #1f2a38;
+
+    --color-text-light: #4a5a6a;
+    /* Accent */
+    --color-accent: #3b6ea8;
+    --color-accent-light: #6fa3d8;
+
+    /* Borders */
+    --color-border: #d4d2ce;
+
+    /* Typography */
+    --font-main: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    /* Spacing scale */
+    --space-xs: 0.4rem;
+    --space-sm: 0.8rem;
+    --space-md: 1.6rem;
+    --space-lg: 2.4rem;
+    --space-xl: 4rem;
+    --space-xxl: 6rem;
+
+    /* Max width for content */
+    --max-width: 900px;
+
+}
