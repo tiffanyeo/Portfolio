@@ -11,3 +11,27 @@
 */
 
 /* TODO: Add Hero style */
+
+#hero .hero__content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
+}
+
+.hero__subtitle {
+    font-size: 1.3rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-lg);
+}
+
+.hero__cta {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+}
