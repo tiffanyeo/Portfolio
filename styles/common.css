@@ -9,10 +9,10 @@
 * - Common typography styles 
 */
 
-/* TODO: Add common styling */
 
-/* ---------- Color System ---------- */
 :root {
+
+    /* ---------- Color System ---------- */
     /* Background */
     --color-bg: #f3f1ed;
     --color-bg-alt: #e9e7e3;

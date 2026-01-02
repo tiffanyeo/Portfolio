@@ -10,3 +10,38 @@
 
 
 /* TODO: Add layout style */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+    background: transparent;
+    border: none;
+    position: relative;
+
+}
+
+.navbar__links a {
+    color: var(--color-text);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navbar__links a:hover {
+    color: var(--color-accent);
+}
+
+/* ---------- Section Wrapper ---------- */
+section {
+    padding: var(--space-xxl) var(--space-md);
+    display: flex;
+    justify-content: center;
+}
+
+section>div {
+    width: 100%;
+    max-width: var(--max-width);
+}
