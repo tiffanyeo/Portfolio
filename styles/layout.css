@@ -48,27 +48,72 @@ section>div {
 
 
 
-/* ---------- Hero ---------- */
-#hero .hero__content {
-    text-align: center;
-    margin: 0 auto;
+/* ---------- Generic Section Titles ---------- */
+h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text);
 }
 
-.hero__title {
-    font-size: 2.8rem;
-    font-weight: 600;
+/* ---------- Text Blocks ---------- */
+p {
     margin-bottom: var(--space-md);
     color: var(--color-text);
 }
 
-.hero__subtitle {
-    font-size: 1.3rem;
-    color: var(--color-text-light);
-    margin-bottom: var(--space-lg);
+/* ---------- Lists ---------- */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.hero__cta {
+li {
+    margin-bottom: var(--space-sm);
+}
+
+/* ---------- Project Cards ---------- */
+.project__card {
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-bottom: var(--space-xl);
+    background: var(--color-bg-alt);
+}
+
+.project__title {
+    font-size: 1.4rem;
+    margin-bottom: var(--space-md);
+}
+
+.project__tech {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.project__tag {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+}
+
+/* ---------- Contact Links ---------- */
+.contact__links {
+    display: flex;
     gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.contact__link {
+    font-weight: 500;
+    color: var(--color-accent);
+}
+
+.contact__link:hover {
+    color: var(--color-accent-light);
 }
