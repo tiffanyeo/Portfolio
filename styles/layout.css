@@ -12,18 +12,34 @@
 /* TODO: Add layout style */
 
 .navbar {
+    background-color: gray;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: var(--space-lg);
     padding: var(--space-md) 0;
-    background: transparent;
+    /*     background: transparent;
+ */
     border: none;
     position: relative;
 
 }
 
+.navbar__logo {
+    background-color: indianred;
+}
+
+.navbar__links {
+    background: lightcyan;
+    display: flex;
+    gap: var(--space-sm)
+}
+
+.displayNoneLink {
+    display: none;
+}
+
 .navbar__links a {
+    background-color: hotpink;
     color: var(--color-text);
     font-weight: 500;
     text-decoration: none;
