@@ -67,7 +67,6 @@
     }
 
     a {
-        color: var(--color-accent);
         text-decoration: none;
     }
 
@@ -86,4 +85,8 @@
         width: 100%;
         max-width: var(--max-width);
     }
+}
+
+.visual {
+    background-color: lightsteelblue;
 }

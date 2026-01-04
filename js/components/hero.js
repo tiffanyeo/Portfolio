@@ -21,19 +21,16 @@ export function renderHero() {
 
     section.innerHTML = `
         <div class="hero__content">
-            <h1 class="hero__title">Hi, I'm Tiffany</h1>
-            <p class="hero__subtitle">
-                Developer. Builder. Problem Solver.
-            </p>
-
+            <h1 class="hero__title">Tiffany Larsson</h1>
+            <div class="heroDiv"> 
+                <p class="hero__subtitle">Software Developer            </p>
+                <p class="hero__subtitle">Modular Solutions            </p>
+                </div>
+            
             <div class="hero__cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
-        </div>
-
-        <div class="hero__visual">
-            <!-- Placeholder for future image or animation -->
         </div>
     `;
 }

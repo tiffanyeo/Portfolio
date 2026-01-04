@@ -20,6 +20,11 @@ export function renderAbout() {
     if (!section) return;
 
     section.innerHTML = `
+
+        <div class="about__visual visual">
+            <!-- Placeholder for future image or illustration -->
+        </div>
+        
         <div class="about__content">
             <h2 class="about__title">About Me</h2>
 
@@ -32,10 +37,6 @@ export function renderAbout() {
                 My background spans computer science, media technology, and hands-on product development.
                 I enjoy solving real problems, improving systems, and creating meaningful user experiences.
             </p>
-        </div>
-
-        <div class="about__visual">
-            <!-- Placeholder for future image or illustration -->
         </div>
     `;
 }

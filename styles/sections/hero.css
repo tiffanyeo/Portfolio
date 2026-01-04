@@ -12,9 +12,18 @@
 
 /* TODO: Add Hero style */
 
+#hero {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.heroDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
 #hero .hero__content {
     text-align: center;
-    margin: 0 auto;
 }
 
 .hero__title {
