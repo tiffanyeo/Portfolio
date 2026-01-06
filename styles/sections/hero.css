@@ -14,8 +14,6 @@
 
 #hero {
     height: 100vh;
-    /* full viewport height */
-    /* pushes title up + buttons down */
     align-items: center;
     padding: var(--space-xl) var(--space-md);
     padding-top: 0;
@@ -33,7 +31,7 @@
 
 .hero__content {
     background-color: lightpink;
-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,7 +42,7 @@ height: 100%;
     font-size: 5rem;
     font-weight: 600;
     margin: 0;
-    /* remove bottom margin so spacing is clean */
+
     color: var(--color-text);
 }
 
@@ -54,10 +52,7 @@ height: 100%;
     margin-bottom: var(--space-lg);
 }
 
-.hero__carusel {
-    background-color: lightgrey;
-    height: 300px;
-}
+
 
 .hero__cta {
     background-color: yellowgreen;
@@ -67,4 +62,39 @@ height: 100%;
     display: flex;
     gap: var(--space-md);
     margin-bottom: var(--space-md);
+}
+
+/* --------------- CARUSEL  --------------- */
+
+.hero__carusel {
+    background-color: lightsalmon;
+    /*     height: 300px;
+    display: flex;
+    gap: var(--space-md); */
+    width: 100%;
+
+    overflow: hidden;
+    padding: 0 var(--space-lg);
+    box-sizing: border-box;
+}
+
+.hero__carusel__track {
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-md);
+    overflow-x: auto;
+}
+
+
+.hero__carousel__item {
+    flex: 0 0 25%;
+    height: 300px;
+    background-color: white;
+    border: 10px solid teal;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }

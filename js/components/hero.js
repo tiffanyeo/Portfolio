@@ -28,6 +28,29 @@ export function renderHero() {
                     <p class="hero__subtitle">Modular Solutions</p>
                 </div>
                 <div class="hero__carusel"> 
+                    <div class="hero__carusel__track"> 
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                            </div>
+                        </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                                <p class="carusel__item__tags">JWT</p>
+                            </div>
+                        </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                            </div>
+                        </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
