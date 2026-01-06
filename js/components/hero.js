@@ -21,11 +21,15 @@ export function renderHero() {
 
     section.innerHTML = `
         <div class="hero__content">
-            <h1 class="hero__title">Tiffany Larsson</h1>
-            <div class="heroDiv"> 
-                <p class="hero__subtitle">Software Developer            </p>
-                <p class="hero__subtitle">Modular Solutions            </p>
+            <div class="hero__text__container">
+                <h1 class="hero__title">Tiffany Larsson</h1>
+                <div class="heroDiv"> 
+                    <p class="hero__subtitle">Software Developer</p>
+                    <p class="hero__subtitle">Modular Solutions</p>
                 </div>
+                <div class="hero__carusel"> 
+                </div>
+            </div>
             
             <div class="hero__cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
