@@ -17,13 +17,15 @@
  * -----------------------------------------
  * Injects the navbar markup into the page.
  */
+
+let lastScrollY = 0;
+
 export function initNavbar() {
+   
+    const navbarContainer = document.querySelector("#navbar");
+    if (!navbarContainer) return;
 
-    const navbar = document.querySelector("#navbar");
-
-    if (!navbar) return;
-
-    navbar.innerHTML = `
+    navbarContainer.innerHTML = `
         <nav class="navbar">
             <div class="navbar__logo">Tiffany</div>
 
@@ -36,11 +38,33 @@ export function initNavbar() {
                 <li><a href="#skills">Skills</a></li>
                 <li><a class="displayNoneLink" href="#selectedwork">Selected Work</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a hclass="displayNoneLink" ref="#education">Education</a></li>
+                <li><a class="displayNoneLink" href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     `;
 
-    console.log("from navbar.js in initNavbar()");
+    const navbar = navbarContainer.querySelector(".navbar");
+
+    // Scroll‑logic
+    window.addEventListener("scroll", () => {
+
+        const currentY = window.scrollY;
+
+        // 1. If top = 0, hide navbar
+        if (currentY === 0) {
+            navbar.classList.remove("navbar--visible");
+        }
+        // 2. Scroll up, hide navbar
+        else if (currentY > lastScrollY) {
+            navbar.classList.remove("navbar--visible");
+        }
+        // 3. Scroll up, show navbar
+        else {
+            navbar.classList.add("navbar--visible");
+        }
+
+        lastScrollY = currentY;
+    });
+
 }
