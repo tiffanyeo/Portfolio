@@ -1,19 +1,8 @@
-/**
- * hero.js
- * -----------------------------------------
- * Renders the Hero section content.
- *
- * Responsibilities:
- * - Inject HTML into <section id="hero">
- * - Later: handle animations or interactive elements
- *
- * Imported and called from main.js via renderHero().
- */
+/*  js/components/hero.js */
+
 
 /**
- * renderHero()
- * -----------------------------------------
- * Inserts the Hero section markup.
+ * @returns {void}
  */
 export function renderHero() {
 
@@ -28,8 +17,9 @@ export function renderHero() {
                     <p class="hero__subtitle">Software Developer</p>
                     <p class="hero__subtitle">Modular Solutions</p>
                 </div>
-                <div class="hero__carusel"> 
-                    <div class="hero__carusel__track"> 
+                
+                <div class="hero__carousel">
+                <div class="hero__carousel__track">
                         <div class="hero__carousel__item">
                             <div class="hero__carousel__projects_text">
                                 <p class="carusel__item__tags">RBAC</p>
@@ -39,6 +29,18 @@ export function renderHero() {
                             <div class="hero__carousel__projects_text">
                                 <p class="carusel__item__tags">RBAC</p>
                                 <p class="carusel__item__tags">JWT</p>
+                                <p class="carusel__item__tags">DENO</p>
+                            </div>
+                        </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                            </div>
+                        </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                                <p class="carusel__item__tags">API</p>
                             </div>
                         </div>
                         <div class="hero__carousel__item">
@@ -54,16 +56,13 @@ export function renderHero() {
                         <div class="hero__carousel__item">
                             <div class="hero__carousel__projects_text">
                                 <p class="carusel__item__tags">RBAC</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
+                                <p class="carusel__item__tags">CRUD</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+
             
             <div class="hero__cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -73,10 +72,34 @@ export function renderHero() {
     `;
 }
 
+/**
+ * 
+ * @returns {void}
+ */
 export function initHeroCarousel() {
 
     const track = document.querySelector('.hero__carusel__track');
     if (!track) return;
 
     let position = 0;
+
+    function autoScroll() {
+
+        // Calculate the width of one project card including margin
+        const projectCardWidth = track.children[0].offsetWidth + parseInt(getComputedStyle(track).gap);
+        // Get the total width of the track
+        position -= projectCardWidth;
+
+        // Reset position if we've scrolled through all items
+        if (Math.abs(position) >= itemWidth * track.children.length) {
+            position = 0; 
+        }
+
+        // Apply the transform to the track
+        track.style.transform = `translateX(${position}px)`;
+    }
+
+    // Scroll every 2 seconds
+    setInterval(autoScroll, 2000); 
+
 }
