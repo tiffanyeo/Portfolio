@@ -16,6 +16,7 @@
  * Inserts the Hero section markup.
  */
 export function renderHero() {
+
     const section = document.querySelector("#hero");
     if (!section) return;
 
@@ -50,6 +51,16 @@ export function renderHero() {
                                 <p class="carusel__item__tags">RBAC</p>
                             </div>
                         </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                            </div>
+                        </div>
+                        <div class="hero__carousel__item">
+                            <div class="hero__carousel__projects_text">
+                                <p class="carusel__item__tags">RBAC</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,4 +71,12 @@ export function renderHero() {
             </div>
         </div>
     `;
+}
+
+export function initHeroCarousel() {
+
+    const track = document.querySelector('.hero__carusel__track');
+    if (!track) return;
+
+    let position = 0;
 }

@@ -33,11 +33,12 @@ initFooter();
     * contact
 */
 
-// Navbaar
+// Navbar
 import { initNavbar } from './navbar.js';
 
 // Sections
 import { renderHero } from "./components/hero.js";
+import { initHeroCarousel } from "./components/hero.js";
 import { renderAbout } from "./components/about.js";
 import { renderFunlines } from "./components/funlines.js";
 import { renderWhyMe } from "./components/whyme.js";
@@ -57,6 +58,7 @@ function initApp() {
 
     initNavbar(); 
     renderHero(); 
+    initHeroCarousel();
     renderAbout(); 
     renderFunlines(); 
     renderWhyMe(); 
