@@ -78,21 +78,29 @@ export function renderHero() {
  */
 export function initHeroCarousel() {
 
-    const track = document.querySelector('.hero__carusel__track');
+    const track = document.querySelector('.hero__carousel__track');
     if (!track) return;
 
     let position = 0;
 
+    // Clone items to create an infinite loop effect
+    const items = Array.from(track.children);
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        track.appendChild(clone);
+    });
+
+
     function autoScroll() {
 
         // Calculate the width of one project card including margin
-        const projectCardWidth = track.children[0].offsetWidth + parseInt(getComputedStyle(track).gap);
+        const itemWidth = track.children[0].offsetWidth + parseInt(getComputedStyle(track).gap);
         // Get the total width of the track
-        position -= projectCardWidth;
+        position -= itemWidth;
 
         // Reset position if we've scrolled through all items
-        if (Math.abs(position) >= itemWidth * track.children.length) {
-            position = 0; 
+        if (Math.abs(position) >= itemWidth * items.length) {
+            position = 0;
         }
 
         // Apply the transform to the track
@@ -100,6 +108,6 @@ export function initHeroCarousel() {
     }
 
     // Scroll every 2 seconds
-    setInterval(autoScroll, 2000); 
+    setInterval(autoScroll, 2000);
 
 }

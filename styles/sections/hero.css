@@ -83,8 +83,9 @@
     display: flex;
     flex-direction: row;
     gap: var(--space-md);
-    overflow-x: auto;
+
     will-change: transform;
+    transition: transform 0.5s ease; 
 }
 
 
