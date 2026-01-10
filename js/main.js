@@ -56,20 +56,31 @@ import { renderContact } from "./components/contact.js";
  */
 function initApp() {
 
-    initNavbar(); 
-    renderHero(); 
+    initNavbar();
+    renderHero();
     initHeroCarousel();
-    renderAbout(); 
-    renderFunlines(); 
-    renderWhyMe(); 
-    renderHowIWork(); 
-    renderSkills(); 
-    renderSelectedWork(); 
-    renderProjects(); 
-    renderEducation(); 
+    renderAbout();
+    renderFunlines();
+    renderWhyMe();
+    renderHowIWork();
+    renderSkills();
+    renderSelectedWork();
+    renderProjects();
+    renderEducation();
     renderContact();
 
 }
+
+const originalTitle = document.title;
+
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        document.title = "You still there..?";
+    } else {
+        document.title = originalTitle;
+    }
+})
+
 
 // When file is loaded, run initApp()
 document.addEventListener("DOMContentLoaded", initApp);
