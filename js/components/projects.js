@@ -25,7 +25,7 @@ export async function renderProjects() {
     if (!currSection) return;
 
     // Get pproject data from JSON file
-    const response = await fetcch("../../data/projects.json");
+    const response = await fetch("/data/projects.json");
     const data = await response.json();
 
     let allProjectsHTML = "";
@@ -36,7 +36,7 @@ export async function renderProjects() {
         let techStackHTML = "";
 
         // Build each projects tech stack HTML
-        currProj.forEach(currTech => {
+        currProj.tech.forEach(currTech => {
             techStackHTML += `<span class="project__tag">${currTech}</span>`;
         })
 
@@ -44,7 +44,7 @@ export async function renderProjects() {
         allProjectsHTML += `
             <div class="project__card">
                 <h3 class="project__title">${currProj.name}</h3>
-                <div class="project__tech>${techStackHTML}</div>
+                <div class="project__tech">${techStackHTML}</div>
                 <div class="project__description">
                     <p class="project__text">The problem: ${currProj.description.problem}</p>
                     <p class="project__text">The solution: ${currProj.description.solution}</p>
