@@ -1,38 +1,5 @@
 /* main.js */
 
-/* init, imports, eventlisterners, etc. */
-
-/* 
-import { initNavbar } from './navbar.js');
-import { initFooter } from './footer.js';
-...
-import { renderHero } from './components/hero.js';
-...
-*/
-
-/* 
-renderHero();
-...
-initNavbar();
-initFooter();
-...
-*/
-
-/* TODO: import navbar -logic */
-/* TODO: import contact -logic */
-/* TODO: import render funcs 
-    * hero
-    * about
-    * funlines
-    * whyme
-    * howiwork
-    * skills
-    * selectedwork
-    * projects
-    * education
-    * contact
-*/
-
 // Navbar
 import { initNavbar } from './navbar.js';
 
@@ -71,9 +38,9 @@ function initApp() {
 
 }
 
+// Change document title on tab change
 const originalTitle = document.title;
-
-document.addEventListener("visibilitychange", () => {
+document.addEventListener( "visibilitychange", () => {
     if (document.hidden) {
         document.title = "You still there..?";
     } else {
@@ -84,5 +51,3 @@ document.addEventListener("visibilitychange", () => {
 
 // When file is loaded, run initApp()
 document.addEventListener("DOMContentLoaded", initApp);
-
-

@@ -1,0 +1,29 @@
+{
+    "title": "projects",
+    "items": [
+        {
+            "name": "projectName",
+            "tech": [
+                "tech1",
+                "tech2",
+                "tech3"
+            ],
+            "description": {
+                "problem": "problemDescription",
+                "solution": "solutionDescription"
+            }
+        },
+        {
+            "name": "projectName",
+            "tech": [
+                "tech1",
+                "tech2",
+                "tech3"
+            ],
+            "description": {
+                "problem": "problemDescription",
+                "solution": "solutionDescription"
+            }
+        }
+    ]
+}
