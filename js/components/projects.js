@@ -18,7 +18,36 @@
  * Currently empty — will be implemented once
  * the HTML structure and text content are approved.
  */
-export function renderProjects() {
+
+export async function renderProjects() {
+    
+    const section = document.querySelector("#projects");
+    if (!section) return;
+
+    // Get pproject data from JSON file
+    const response = await fetcch("../../data/projects.json");
+    const data = await response.json();
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* export function renderProjects() {
     const section = document.querySelector("#projects");
     if (!section) return;
 
@@ -127,4 +156,4 @@ export function renderProjects() {
             </div>
         </div>
     `;
-}
+} */
