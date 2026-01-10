@@ -53,7 +53,7 @@ export async function renderProjects() {
         `;    
     })
     
-
+    // Insert the final HTML into the section
     currSection.innerHTML = `
         <div class="projects__content">
             <h2 class="projects__title">${data.title}</h2>

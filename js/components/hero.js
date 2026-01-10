@@ -4,12 +4,37 @@
 /**
  * @returns {void}
  */
-export function renderHero() {
 
-    const section = document.querySelector("#hero");
-    if (!section) return;
+export async function renderHero() {
 
-    section.innerHTML = `
+    const currSection = document.querySelector("#hero");
+    if (!currSection) return;
+
+    const response = await fetch("/data/projects.json");
+    const data = await response.json();
+
+    let carouselItemsHTML = "";
+
+    // Iterate through each project to build carousel items
+    data.projects.forEach(currProj => {
+
+        let techTagsHTML = "";
+
+        // Build tech tags HTML for the current project
+        currProj.tech.slice(0, 3).forEach(currTech => {
+            techTagsHTML += `<p class="carusel__item__tags">${currTech}</p>`;
+        });
+
+        // Build carousel card HTML for the current project
+        carouselItemsHTML += `
+            <div class="hero__carousel__item">
+                <div class="hero__carousel__projects_text">${techTagsHTML}</div>
+            </div>
+        `;
+    })
+
+    // Insert the final HTML and carousel items into the section
+    currSection.innerHTML = `
         <div class="hero__content">
             <div class="hero__text__container">
                 <h1 class="hero__title">Tiffany Larsson</h1>
@@ -19,63 +44,25 @@ export function renderHero() {
                 </div>
                 
                 <div class="hero__carousel">
-                <div class="hero__carousel__track">
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                                <p class="carusel__item__tags">JWT</p>
-                                <p class="carusel__item__tags">DENO</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                                <p class="carusel__item__tags">API</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                            </div>
-                        </div>
-                        <div class="hero__carousel__item">
-                            <div class="hero__carousel__projects_text">
-                                <p class="carusel__item__tags">RBAC</p>
-                                <p class="carusel__item__tags">CRUD</p>
-                            </div>
-                        </div>
+                    <div class="hero__carousel__track">
+                        ${carouselItemsHTML}
                     </div>
                 </div>
-                </div>
+            </div>
 
-            
             <div class="hero__cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
         </div>
     `;
+
 }
 
 /**
  * 
  * @returns {void}
- */
+*/
 export function initHeroCarousel() {
 
     const track = document.querySelector('.hero__carousel__track');
@@ -89,7 +76,7 @@ export function initHeroCarousel() {
     });
 
     let position = 0;
-    let speed = 0.5; 
+    let speed = 0.5;
 
     // Animation loop
     function update() {

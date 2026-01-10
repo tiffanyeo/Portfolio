@@ -21,10 +21,10 @@ import { renderContact } from "./components/contact.js";
  * -----------------------------------------
  * Runs all initialization logic.
  */
-function initApp() {
+async function initApp() {
 
     initNavbar();
-    renderHero();
+    await renderHero();
     initHeroCarousel();
     renderAbout();
     renderFunlines();
