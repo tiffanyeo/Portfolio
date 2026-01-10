@@ -21,16 +21,16 @@
 
 export async function renderProjects() {
 
-    const section = document.querySelector("#projects");
-    if (!section) return;
+    const currSection = document.querySelector("#projects");
+    if (!currSection) return;
 
     // Get pproject data from JSON file
     const response = await fetcch("../../data/projects.json");
     const data = await response.json();
 
-    let projectHTML = "";
+    let allProjectsHTML = "";
 
-    // Build project cards HTML
+    // Iterate through each project
     data.projects.forEach(currProj => {
 
         let techStackHTML = "";
@@ -41,7 +41,7 @@ export async function renderProjects() {
         })
 
         // Build each projects card HTML
-        projectHTML += `
+        allProjectsHTML += `
             <div class="project__card">
                 <h3 class="project__title">${currProj.name}</h3>
                 <div class="project__tech>${techStackHTML}</div>
@@ -50,14 +50,16 @@ export async function renderProjects() {
                     <p class="project__text">The solution: ${currProj.description.solution}</p>
                 </div>
             </div>
-        `;
-
-
-
+        `;    
     })
+    
 
-
-
+    currSection.innerHTML = `
+        <div class="projects__content">
+            <h2 class="projects__title">${data.title}</h2>
+            <div class="projects__list">${allProjectsHTML}</div>
+        </div>
+    `;    
 }
 
 
