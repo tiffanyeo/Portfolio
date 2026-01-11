@@ -38,21 +38,27 @@ export async function renderHero() {
         <div class="hero__content">
             <div class="hero__text__container">
                 <h1 class="hero__title">Tiffany Larsson</h1>
-                <div class="heroDiv"> 
-                    <p class="hero__subtitle">Software Developer</p>
-                    <p class="hero__subtitle">Modular Solutions</p>
-                </div>
-                
-                <div class="hero__carousel">
-                    <div class="hero__carousel__track">
-                        ${carouselItemsHTML}
+                    <div class="heroDiv"> 
+                        <p class="hero__subtitle">Software Developer</p>
+                        <p class="hero__subtitle">Modular Solutions</p>
                     </div>
+                    
+                    <div class="hero__carousel">
+                        <div class="hero__carousel__track">${carouselItemsHTML}</div>
+                    </div>
+                    
+                    <div class="">
+                        <div class="">
+                            <p class="hero__subtitle">Software Engineering & Human-Centered Systems</p>
+                            <p class="hero__subtitle"> Developing technology beyond the code</p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
 
             <div class="hero__cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#contact" class="btn btn-+secondary">Get in Touch</a>
             </div>
         </div>
     `;
