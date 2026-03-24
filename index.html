@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Global styles -->
-        <link rel="stylesheet" href="styles/common.css" />
-        <link rel="stylesheet" href="styles/layout.css" />
+    <!-- Global styles -->
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
 
-        <!-- Component styles -->
-        <link rel="stylesheet" href="styles/components/buttons.css" />
+    <!-- Component styles -->
+    <link rel="stylesheet" href="styles/components/buttons.css" />
 
-        <!-- Section styles -->
-        <link rel="stylesheet" href="styles/sections/hero.css" />
-        <link rel="stylesheet" href="styles/sections/about.css" />
-        <link rel="stylesheet" href="styles/sections/funlines.css" />
-        <link rel="stylesheet" href="styles/sections/whyme.css" />
-        <link rel="stylesheet" href="styles/sections/howiwork.css" />
-        <link rel="stylesheet" href="styles/sections/skills.css" />
-        <link rel="stylesheet" href="styles/sections/selectedwork.css" />
-        <link rel="stylesheet" href="styles/sections/projects.css" />
-        <link rel="stylesheet" href="styles/sections/education.css" />
-        <link rel="stylesheet" href="styles/sections/contact.css" />
+    <!-- Section styles -->
+    <link rel="stylesheet" href="styles/sections/hero.css" />
+    <link rel="stylesheet" href="styles/sections/about.css" />
+    <link rel="stylesheet" href="styles/sections/funlines.css" />
+    <link rel="stylesheet" href="styles/sections/whyme.css" />
+    <link rel="stylesheet" href="styles/sections/howiwork.css" />
+    <link rel="stylesheet" href="styles/sections/skills.css" />
+    <link rel="stylesheet" href="styles/sections/selectedwork.css" />
+    <link rel="stylesheet" href="styles/sections/projects.css" />
+    <link rel="stylesheet" href="styles/sections/education.css" />
+    <link rel="stylesheet" href="styles/sections/contact.css" />
+    <link rel="stylesheet" href="styles/sections/loader.css" />
 
-        <title>My Portfolio</title>
-    </head>
+    <title>Tiffany Larsson</title>
+</head>
 
-    <body id="body" class="appBody">
+<body id="body" class="appBody">
 
-        <!-- Navbar is injected via js/navbar.js -->
-        <header id="navbar"></header>
+    <!-- Navbar is injected via js/navbar.js -->
+    <header id="navbar"></header>
+
+    <main id="main" class="appMain">
 
 
-        <main id="main" class="appMain">
+        <!-- Hero content is injected via js/components/hero.js -->
+        <section id="hero"></section>
 
+        <!-- About content is injected via js/components/about.js -->
+        <section id="about"></section>
 
-            <!-- Hero content is injected via js/components/hero.js -->
-            <section id="hero"></section>
+        <!-- Fun Lines content is injected via js/components/funlines.js -->
+        <section id="funlines"></section>
 
-            <!-- About content is injected via js/components/about.js -->
-            <section id="about"></section>
+        <!-- Why Me content is injected via js/components/whyme.js -->
+        <section id="whyme"></section>
+        <section id="howiwork"></section>
 
-            <!-- Fun Lines content is injected via js/components/funlines.js -->
-            <section id="funlines"></section>
+        <!-- Skills content is injected via js/components/skills.js -->
+        <section id="skills"></section>
 
-            <!-- Why Me content is injected via js/components/whyme.js -->
-            <section id="whyme"></section>
-            <section id="howiwork"></section>
+        <!-- Selected Work content is injected via js/components/selectedwork.js -->
+        <section id="selectedwork"></section>
 
-            <!-- Skills content is injected via js/components/skills.js -->
-            <section id="skills"></section>
+        <!-- Projects content is injected via js/components/projects.js -->
+        <section id="projects"></section>
 
-            <!-- Selected Work content is injected via js/components/selectedwork.js -->
-            <section id="selectedwork"></section>
+        <!-- Education content is injected via js/components/education.js -->
+        <section id="education"></section>
 
-            <!-- Projects content is injected via js/components/projects.js -->
-            <section id="projects"></section>
+        <!-- Contact content is injected via js/components/contact.js -->
+        <section id="contact"></section>
 
-            <!-- Education content is injected via js/components/education.js -->
-            <section id="education"></section>
+    </main>
 
-            <!-- Contact content is injected via js/components/contact.js -->
-            <section id="contact"></section>
+    <footer id="footer" class="appFooter"></footer>
 
-        </main>
+    <!-- Imports all components -->
+    <script type="module" src="js/main.js"></script>
 
-        <footer id="footer" class="appFooter"></footer>
-
-        <!-- Imports all components -->
-        <script type="module" src="js/main.js"></script>
-
-    </body>
+</body>
 
 </html>

@@ -1,5 +1,8 @@
 /* main.js */
 
+// Loader
+import { loader } from "./components/loader.js";
+
 // Navbar
 import { initNavbar } from './navbar.js';
 
@@ -42,7 +45,7 @@ async function initApp() {
 const originalTitle = document.title;
 document.addEventListener( "visibilitychange", () => {
     if (document.hidden) {
-        document.title = "You still there..?";
+        document.title = "Hey! Still there..?";
     } else {
         document.title = originalTitle;
     }
@@ -50,4 +53,7 @@ document.addEventListener( "visibilitychange", () => {
 
 
 // When file is loaded, run initApp()
-document.addEventListener("DOMContentLoaded", initApp);
+document.addEventListener("DOMContentLoaded", () => {
+    loader();
+    initApp();
+});

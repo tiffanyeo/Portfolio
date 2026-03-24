@@ -32,7 +32,7 @@ export function renderContact() {
 
             <div class="contact__links">
                 <a href="mailto:tiffanylarsson.dev@gmail.com" class="contact__link">Mail</a>
-                <a href="https://github.com/tiffnaystud" target="_blank" class="contact__link">GitHub</a>
+                <a href="https://github.com/tiffanystud" target="_blank" class="contact__link">GitHub</a>
                 <a href="https://www.linkedin.com/in/tiffany-e-larsson" target="_blank" class="contact__link">LinkedIn</a>
             </div>
         </div>
