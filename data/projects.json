@@ -5,9 +5,9 @@
             "name": "PentaCal",
             "tech": [
                 "PHP",
-                "JavaScript",
                 "Custom Web Components",
                 "Pub/Sub State",
+                "JavaScript",
                 "JSON Database"
             ],
             "description": {
@@ -25,7 +25,7 @@
             ],
             "description": {
                 "problem": "Teams needed a secure and structured way to manage inventory with proper authentication, role control and reliable data handling.",
-                "solution": "A ull‑stack inventory system with JWT auth, RBAC, modular Deno backend, structured logging. Focus on clarity, maintainability and DevOps‑oriented architecture."
+                "solution": "A full‑stack inventory system with JWT auth, RBAC, modular Deno backend, structured logging. Focus on clarity, maintainability and DevOps‑oriented architecture."
             }
         },
         {
@@ -46,8 +46,8 @@
             "name": "City Management Web Service",
             "tech": [
                 "Deno",
-                "Fetch API",
                 "CORS",
+                "Fetch API",
                 "DOM",
                 "Validation"
             ],
