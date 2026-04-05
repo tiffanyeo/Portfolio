@@ -19,24 +19,23 @@
             "name": "ShelfWise",
             "tech": [
                 "TypeScript",
-                "React",
                 "SQLite",
                 "JWT",
                 "Deno"
             ],
             "description": {
                 "problem": "Teams needed a secure and structured way to manage inventory with proper authentication, role control and reliable data handling.",
-                "solution": "Built a full‑stack inventory system with JWT auth, RBAC, modular Deno backend, structured logging and a React frontend. Focus on clarity, maintainability and DevOps‑oriented architecture."
+                "solution": "A ull‑stack inventory system with JWT auth, RBAC, modular Deno backend, structured logging. Focus on clarity, maintainability and DevOps‑oriented architecture."
             }
         },
         {
             "name": "PackIT",
             "tech": [
-                "JavaScript OOP",
                 "Deno",
+                "Cookies",
                 "REST APIs",
-                "SPA Navigation",
-                "Cookies"
+                "JavaScript",
+                "SPA Navigation"
             ],
             "description": {
                 "problem": "Travelers needed a way to create, save and manage packing lists across multiple trips with persistent user data.",
