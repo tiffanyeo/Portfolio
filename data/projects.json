@@ -2,52 +2,59 @@
     "title": "My Projects",
     "projects": [
         {
-            "name": "projectName",
+            "name": "PentaCal",
             "tech": [
-                "tech1",
-                "tech2"
+                "PHP",
+                "JavaScript",
+                "Custom Web Components",
+                "Pub/Sub State",
+                "JSON Database"
             ],
             "description": {
-                "problem": "problemDescription",
-                "solution": "solutionDescription"
+                "problem": "People often struggle to coordinate events, communicate and stay updated within their social circles in one unified place.",
+                "solution": "Built a prototype that combines messaging and calendar‑based group coordination. The backend uses a PHP API with a JSON data layer, while the frontend is implemented in vanilla JavaScript with custom components, view‑specific modules, a lightweight routing approach and a pub/sub‑driven state system. The project focuses on architecture, modularity and team‑based full‑stack development rather than a finished product."
             }
         },
         {
-            "name": "projectName",
+            "name": "ShelfWise",
             "tech": [
-                "tech1",
-                "tech2",
-                "tech3"
+                "TypeScript",
+                "React",
+                "SQLite",
+                "JWT",
+                "Deno"
             ],
             "description": {
-                "problem": "problemDescription",
-                "solution": "solutionDescription"
+                "problem": "Teams needed a secure and structured way to manage inventory with proper authentication, role control and reliable data handling.",
+                "solution": "Built a full‑stack inventory system with JWT auth, RBAC, modular Deno backend, structured logging and a React frontend. Focus on clarity, maintainability and DevOps‑oriented architecture."
             }
         },
         {
-            "name": "projectName",
+            "name": "PackIT",
             "tech": [
-                "techA",
-                "techB",
-                "techC",
-                "techD",
-                "techE"
+                "JavaScript OOP",
+                "Deno",
+                "REST APIs",
+                "SPA Navigation",
+                "Cookies"
             ],
             "description": {
-                "problem": "problemDescription",
-                "solution": "solutionDescription"
+                "problem": "Travelers needed a way to create, save and manage packing lists across multiple trips with persistent user data.",
+                "solution": "Built an agile full‑stack service with authentication via cookies, internal/external API integration, automated tests and SPA navigation. Contributed to both backend structure and frontend architecture."
             }
         },
         {
-            "name": "projectName",
+            "name": "City Management Web Service",
             "tech": [
-                "tech1",
-                "tech2",
-                "tech3"
+                "Deno",
+                "Fetch API",
+                "CORS",
+                "DOM",
+                "Validation"
             ],
             "description": {
-                "problem": "problemDescription",
-                "solution": "solutionDescription"
+                "problem": "Users needed a simple interface to manage, search and validate city data with real‑time feedback.",
+                "solution": "Created a CRUD web service with dynamic UI updates, search functionality, in‑browser API testing, consistent error handling and a modular codebase separating frontend logic, tests and server API."
             }
         }
     ]
